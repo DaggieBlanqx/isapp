@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/material.red-pink.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src=" js/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <title>iShip Shippers</title>
+</head>
+<body>
+<style type="text/css">
+.imageheader{
+  width:100%;
+  height:100%;}.blanqxcenter{
+  text-align: center !important;
+  }.blanqxright{
+  text-align: right !important;}
+  .demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;}.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    /*url('images/iship grey.png') */
+    bottom right 15% no-repeat #ff0000;
+  }/**below code for image card*/
+
+ .demo-card-image.mdl-card.vehicles {
+  width: 256px;
+  height: 256px;
+  background: url('images/vehicles.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.boats {
+  width: 256px;
+  height: 256px;
+  background: url('images/boats.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.freight {
+  width: 256px;
+  height: 256px;
+  background: url('images/freight.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.households {
+  width: 256px;
+  height: 256px;
+  background: url('images/households.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.moving {
+  width: 256px;
+  height: 256px;
+  background: url('images/moving.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.heavyEquipment {
+  width: 256px;
+  height: 256px;
+  background: url('images/heavyequipment.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.livestockPets {
+  width: 256px;
+  height: 256px;
+  background: url('images/livestockPets.jpg') center / cover;
+}
+ .demo-card-image.mdl-card.others {
+  width: 256px;
+  height: 256px;
+  background: url('images/others.jpg') center / cover;
+}
+
+
+  .demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);}.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;}
+</style>
+<script type="text/javascript">
+  function validate() {
+    if (document.StepOne.ShipmentCategory.value == "") {
+      alert("Please select your shipment category");
+      document.StepOne.ShipmentCategory.focus();
+      return false;
+    }
+    return true;
+  }
+</script>
+
+<div id="1"><!--open 1-->
+  <div id="2" class="mdl-layout mdl-js-layout" ><!--open 2-->
+
+<script type="text/javascript">
+/*    <header id="3" class="mdl-layout__header"><!--open 3-->
+        <div id="4" class="mdl-layout_icon"><!--opens 4-->
+        </div><!--closes 4-->
+        <div id="5" class="mdl-layout__header-row"><!--opens 5-->
+          <span id="6" class="mdl-layout__title"><!--opens 6-->Dashboard</span><!--closes 6-->
+          <div id="7" class="mdl-layout-spacer"></div>
+          <nav id="8" class="mdl-navigation"><!--opens 8-->
+            <a id="9" class="mdl-navigation__link" href="shippers/" ><!--opens 9-->Shipper</a><!--closes 9-->
+            <a id="10" class="mdl-navigation__link" href="carriers/" ><!--opens 10-->Carrier</a><!--closes 10-->
+            <a id="11" class="mdl-navigation__link" href="iship://app" ><!--opens 19-->Open In App</a><!--closes 11-->
+            <a id="12" class="mdl-navigation__link" href="https://iship.co.ke/#about" ><!--opens 20-->About</a><!--closes 12-->
+            <a id="13" class="mdl-navigation__link" href="https://iship.co.ke/" ><!--opens 21-->Home</a><!--closes 13-->
+          </nav><!--closes 8-->
+        </div><!--closes 5-->
+    </header><!--closes 3-->
+*/
+</script>
+       <div id="14" class="mdl-layout__drawer"><!--opens 14-->
+         <span id="15" class="mdl-layout__title"><!--opens 15-->Dashboard</span><!--closes 15-->
+         <nav id="16" class="mdl-navigation"><!--opens 16-->
+            <a id="17" class="mdl-navigation__link" href="place-shipment.html" ><!--opens 17-->Place Shipments</a><!--closes 17-->
+            <a id="18" class="mdl-navigation__link" href="history.html" ><!--opens 18-->History</a><!--closes 18-->
+            <a id="19" class="mdl-navigation__link" href="track.html" ><!--opens 19-->Track</a><!--closes 19-->
+            <a id="20" class="mdl-navigation__link" href="feedback.html" ><!--opens 20-->Feedback</a><!--closes 20-->
+            <a id="21" class="mdl-navigation__link" href="account.html" ><!--opens 21-->Account</a><!--closes 21-->
+          </nav><!--closes 16-->
+       </div><!--closes 14-->
+
+    <main id="21" class="mdl-layout__content">
+
+      <div id="22" class="mdl-grid">
+         <div id="23" class="mdl-cell mdl-cell--2-col"></div>
+         <div id="24" class="mdl-cell mdl-cell--8-col">
+         <img src="images/loginhead.png" class="imageheader" /><br>
+
+         </div>
+         <div id="25" class="mdl-cell mdl-cell--2-col">
+          
+         </div>
+      </div>
+<!---
+=========================================================================================================
+============BLANQX
+================== AJAX 
+========================LOAD POINT
+==================================LIGHTWEIGHT,FAST,ASYNCHROUNOUS
+=========================================================================================================
+-->  
+<div id="" class="mdl-grid blanqxcenter">
+<div id="" class="mdl-cell mdl-cell--4-col"></div>
+<div id="" class="mdl-cell mdl-cell--4-col">
+  <h4 style="text-align: center;">Select Your Shipping Category</h4>
+</div>
+<div id="" class="mdl-cell mdl-cell--4-col"></div>  
+</div>
+<form action="pick-location.html" name="StepOne" method="" onsubmit="return(validate());">
+<div id="" class="mdl-grid blanqxcenter">
+  
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp vehicles">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="vehicles">
+              <input checked class="mdl-radio__button" id="vehicles" name="ShipmentCategory" type="radio" value="vehicles">
+              <span class="mdl-radio__label">Vehicles</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp boats">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="boats">
+              <input checked class="mdl-radio__button" id="boats" name="ShipmentCategory" type="radio" value="boats">
+              <span class="mdl-radio__label">Boats</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp freight">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Freight">
+              <input checked class="mdl-radio__button" id="Freight" name="ShipmentCategory" type="radio" value="Freight">
+              <span class="mdl-radio__label">Freight</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp households">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Households">
+              <input checked class="mdl-radio__button" id="Households" name="ShipmentCategory" type="radio" value="Households">
+              <span class="mdl-radio__label">Households</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp moving">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Moving">
+              <input checked class="mdl-radio__button" id="Moving" name="ShipmentCategory" type="radio" value="Moving">
+              <span class="mdl-radio__label">Moving</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp heavyEquipment">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="HeavyEquipment">
+              <input checked class="mdl-radio__button" id="HeavyEquipment" name="ShipmentCategory" type="radio" value="HeavyEquipment">
+              <span class="mdl-radio__label">Heavy Equipment</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp livestockPets">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="LivestockPets">
+              <input checked class="mdl-radio__button" id="LivestockPets" name="ShipmentCategory" type="radio" value="LivestockPets">
+              <span class="mdl-radio__label">Livestock & Pets</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+  <div id="" class="mdl-cell mdl-cell--3-col">
+
+     <div class="demo-card-image mdl-card mdl-shadow--2dp others">
+       <div class="mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions">
+         <span class="demo-card-image__filename">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Others">
+              <input checked class="mdl-radio__button" id="Others" name="ShipmentCategory" type="radio" value="Others">
+              <span class="mdl-radio__label">Others</span>
+            </label>
+         </span>
+       </div>
+     </div>
+  </div>
+
+</div>
+<div id="" class="mdl-grid blanqxcenter">
+  <button id="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary ">Next</button>
+</div>
+</form>
+
+</main>
+</div>
+</div>
+</body>
+</html>

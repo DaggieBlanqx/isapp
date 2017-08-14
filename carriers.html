@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carriers</title>
+
+</head>
+<body onload="onDeviceReady();">
+<button id="btn_device_details" onclick="onClick();">DEVICE DETAILS</button>
+<p id="model">Model</p>
+<p id="platform">Operating System</p>
+<p id="uuid">UUID</p>
+<p id="version">OS Version </p>
+<p id="manufacturer">Manufacturer</p>
+<p id="isVirtual">IsVirtual</p>
+<p id="serial">Serial</p>
+
+<script type="text/javascript">
+
+document.addEventListener("deviceready",onDeviceReady,false);
+
+//function onClick(){
+//	alert("START");
+//}
+function onDeviceReady(){
+
+	//var element = document.getElementById('model');
+
+//	element.InnerHTML = 'device model:' + device.model;
+
+//	alert("DEVICE READY");
+
+$('#btn_device_details').click(function(){
+
+	//	alert("READY");
+
+	//	console.log("READY TO GO");
+
+	     $('#model').html(device.model);
+
+    	console.log("hello , I am using " + device.model + " which is running on " + device.platform +" "+ device.version);
+
+    	$('#platform').html(device.platform);
+
+    	$('#uuid').html(device.uuid);
+
+    	$('#version').html(device.version);
+
+    	$('#manufacturer').html(device.manufacturer);
+
+    	$('#isVirtual').html(device.isVirtual);
+
+    	$('#serial').html(device.serial);
+
+
+	});
+
+}
+/*document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+
+    	
+
+}
+*/
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

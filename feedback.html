@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/material.red-pink.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src="js/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <title>Shippers | Feedback</title>
+
+</head>
+<body>
+<style type="text/css">
+  .imageheader{
+  width:100%;
+  height:100%;}.blanqxcenter{
+  text-align: center;
+  }#formCreateAccount{background-position: center;}
+</style>
+<script type="text/javascript">
+  function validate() {
+    if (document.Feedback.FeedSubject.value == "") {
+      alert("Please input your subject");
+      document.Feedback.FeedSubject.focus();
+      return false;
+    }
+
+    if (document.Feedback.FeedMessage.value == "") {
+      alert("Please input your feedback message");
+      document.Feedback.FeedMessage.focus();
+      return false;
+    }
+    return true;
+  }
+</script>
+
+
+  <div id="1"><!--open 1-->
+    <div id="2" class="mdl-layout mdl-js-layout" ><!--open 2-->
+
+
+<script type="text/javascript">
+/*       <div id="14" class="mdl-layout__drawer"><!--opens 14-->
+         <span id="15" class="mdl-layout__title"><!--opens 15-->Dashboard</span><!--closes 15-->
+         <nav id="16" class="mdl-navigation"><!--opens 16-->
+            <a id="17" class="mdl-navigation__link" href="place-shipment.html"><!--opens 17-->Place Shipment</a><!--closes 17-->
+            <a id="18" class="mdl-navigation__link" href="history.html"><!--opens 18-->History</a><!--closes 18-->
+            <a id="19" class="mdl-navigation__link" href="track.html"><!--opens 19-->Track</a><!--closes 19-->
+            <a id="20" class="mdl-navigation__link" href="feedback.html"><!--opens 20-->Feedback</a><!--closes 20-->
+            <a id="21" class="mdl-navigation__link" href="account.html" ><!--opens 21-->Account</a><!--closes 21-->
+          </nav><!--closes 16-->
+       </div><!--closes 14-->
+  */
+</script>
+
+      <main id="21" class="mdl-layout__content">
+
+      <div id="22" class="mdl-grid">
+         <div id="23" class="mdl-cell mdl-cell--2-col"></div>
+         <div id="24" class="mdl-cell mdl-cell--8-col">
+         <img src="images/loginhead.png" class="imageheader" /><br>
+
+         </div>
+         <div id="25" class="mdl-cell mdl-cell--2-col">
+          
+         </div>
+      </div>
+
+      <div id="26" class="mdl-grid">
+
+        <div id="" class="mdl-cell mdl-cell--4-col"></div>
+        <div id="formCreateAccount" class="mdl-cell mdl-cell--4-col blanqxcenter">
+         <legend>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="subject" name="FeedSubject">
+              <label class="mdl-textfield__label" for="subject">Subject</label>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <textarea class="mdl-textfield__input" type="text" rows= "" id="messageBox" name="FeedMessage"></textarea>
+             <label class="mdl-textfield__label" for="messageBox">What do you think about our services</label>
+            </div>
+
+            <br>
+            <button id="53" class="mdl-button  mdl-js-button mdl-button--primary mdl-js-ripple-effect" type="submit" name="" onclick="return(validate());">Give Feedback</button>
+</legend>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body>
+</html>
